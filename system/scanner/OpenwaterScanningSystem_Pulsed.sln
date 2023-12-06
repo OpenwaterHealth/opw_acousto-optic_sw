@@ -1,0 +1,147 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenwaterScanningSystem_Pulsed", "OpenwaterScanningSystem_Pulsed\OpenwaterScanningSystem_Pulsed.vcxproj", "{0B8D06B7-71D9-4EDC-AE3C-8610D7C19A4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "third_party", "third_party", "{04BC4C00-8F1D-445F-82CE-A47134AC7AC3}"
+	ProjectSection(SolutionItems) = preProject
+		..\third_party\BUILD = ..\third_party\BUILD
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ophir", "ophir", "{648DB76D-CA05-4F28-B581-3672A9554205}"
+	ProjectSection(SolutionItems) = preProject
+		..\third_party\ophir\COMx64\BUILD = ..\third_party\ophir\COMx64\BUILD
+		..\third_party\ophir\COMx64\OphirLMMeasurement.h = ..\third_party\ophir\COMx64\OphirLMMeasurement.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "component", "component", "{944EA353-6002-45C7-A834-7A4F43BBAEA3}"
+	ProjectSection(SolutionItems) = preProject
+		..\component\BUILD = ..\component\BUILD
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inc", "inc", "{3D1F5785-297B-4305-9815-E2D24FF9B1E9}"
+	ProjectSection(SolutionItems) = preProject
+		..\component\inc\circular_buffer.h = ..\component\inc\circular_buffer.h
+		..\component\inc\cli.h = ..\component\inc\cli.h
+		..\component\inc\doublebuf.h = ..\component\inc\doublebuf.h
+		..\component\inc\execnode.h = ..\component\inc\execnode.h
+		..\component\inc\fftt.h = ..\component\inc\fftt.h
+		..\component\inc\frame.h = ..\component\inc\frame.h
+		..\component\inc\histogram.h = ..\component\inc\histogram.h
+		..\component\inc\pool.h = ..\component\inc\pool.h
+		..\component\inc\rcam.h = ..\component\inc\rcam.h
+		..\component\inc\rcam_fw.h = ..\component\inc\rcam_fw.h
+		..\component\inc\rcam_param.h = ..\component\inc\rcam_param.h
+		..\component\inc\realtimefft.h = ..\component\inc\realtimefft.h
+		..\component\inc\roi.h = ..\component\inc\roi.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E6EAF3C2-0060-4F3C-BC5F-6FB64CDD487B}"
+	ProjectSection(SolutionItems) = preProject
+		..\component\src\execnode.cpp = ..\component\src\execnode.cpp
+		..\component\src\frame.cpp = ..\component\src\frame.cpp
+		..\component\src\rcam.cpp = ..\component\src\rcam.cpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rs232", "rs232", "{BFB83DFB-2C88-41F0-B52F-491405A42BEA}"
+	ProjectSection(SolutionItems) = preProject
+		..\third_party\rs232\BUILD = ..\third_party\rs232\BUILD
+		..\third_party\rs232\rs232.c = ..\third_party\rs232\rs232.c
+		..\third_party\rs232\rs232.h = ..\third_party\rs232\rs232.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SFML-2.5.1", "SFML-2.5.1", "{CD1895EF-5498-41D2-ADE9-C4E9DEAAD2B0}"
+	ProjectSection(SolutionItems) = preProject
+		..\third_party\SFML-2.5.1\BUILD = ..\third_party\SFML-2.5.1\BUILD
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{40198152-6D28-4DD1-AC45-E52D307FADB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SFML", "SFML", "{E09A252B-6600-494D-95C8-C696EC638C49}"
+	ProjectSection(SolutionItems) = preProject
+		..\third_party\SFML-2.5.1\include\SFML\Audio.hpp = ..\third_party\SFML-2.5.1\include\SFML\Audio.hpp
+		..\third_party\SFML-2.5.1\include\SFML\Config.hpp = ..\third_party\SFML-2.5.1\include\SFML\Config.hpp
+		..\third_party\SFML-2.5.1\include\SFML\GpuPreference.hpp = ..\third_party\SFML-2.5.1\include\SFML\GpuPreference.hpp
+		..\third_party\SFML-2.5.1\include\SFML\Graphics.hpp = ..\third_party\SFML-2.5.1\include\SFML\Graphics.hpp
+		..\third_party\SFML-2.5.1\include\SFML\Main.hpp = ..\third_party\SFML-2.5.1\include\SFML\Main.hpp
+		..\third_party\SFML-2.5.1\include\SFML\Network.hpp = ..\third_party\SFML-2.5.1\include\SFML\Network.hpp
+		..\third_party\SFML-2.5.1\include\SFML\OpenGL.hpp = ..\third_party\SFML-2.5.1\include\SFML\OpenGL.hpp
+		..\third_party\SFML-2.5.1\include\SFML\System.hpp = ..\third_party\SFML-2.5.1\include\SFML\System.hpp
+		..\third_party\SFML-2.5.1\include\SFML\Window.hpp = ..\third_party\SFML-2.5.1\include\SFML\Window.hpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cypress-fx3", "cypress-fx3", "{0A456F59-FFCF-4D08-9BB3-7F11FDC97D0B}"
+	ProjectSection(SolutionItems) = preProject
+		..\third_party\cypress-fx3\BUILD = ..\third_party\cypress-fx3\BUILD
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "json-develop", "json-develop", "{18C3B538-C9D0-4C21-8CCC-7EE2C7E0CE2B}"
+	ProjectSection(SolutionItems) = preProject
+		..\third_party\json-develop\BUILD = ..\third_party\json-develop\BUILD
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pthread", "pthread", "{29F5F0FD-35D7-4D78-9492-0F5E7E1D1D4E}"
+	ProjectSection(SolutionItems) = preProject
+		..\third_party\pthread\BUILD = ..\third_party\pthread\BUILD
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Win64", "Win64", "{3E58C1EA-D646-4ADC-8C18-4F45BB833785}"
+	ProjectSection(SolutionItems) = preProject
+		..\third_party\Win64\BUILD = ..\third_party\Win64\BUILD
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glog", "..\third_party\glog\win\glog\glog.vcxitems", "{51CA10FF-73B5-455F-BF10-7FCB3A1D4403}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fftutilExplora", "..\util\fftutil\fftutilExplora\fftutilExplora.vcxproj", "{9B5B0A86-02D9-4A5C-91D1-F2FE41749199}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\third_party\glog\win\glog\glog.vcxitems*{0b8d06b7-71d9-4edc-ae3c-8610d7c19a4a}*SharedItemsImports = 4
+		..\third_party\glog\win\glog\glog.vcxitems*{51ca10ff-73b5-455f-bf10-7fcb3a1d4403}*SharedItemsImports = 9
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B8D06B7-71D9-4EDC-AE3C-8610D7C19A4A}.Debug|x64.ActiveCfg = Debug|x64
+		{0B8D06B7-71D9-4EDC-AE3C-8610D7C19A4A}.Debug|x64.Build.0 = Debug|x64
+		{0B8D06B7-71D9-4EDC-AE3C-8610D7C19A4A}.Debug|x86.ActiveCfg = Release|x64
+		{0B8D06B7-71D9-4EDC-AE3C-8610D7C19A4A}.Debug|x86.Build.0 = Release|x64
+		{0B8D06B7-71D9-4EDC-AE3C-8610D7C19A4A}.Release|x64.ActiveCfg = Release|x64
+		{0B8D06B7-71D9-4EDC-AE3C-8610D7C19A4A}.Release|x64.Build.0 = Release|x64
+		{0B8D06B7-71D9-4EDC-AE3C-8610D7C19A4A}.Release|x86.ActiveCfg = Release|Win32
+		{0B8D06B7-71D9-4EDC-AE3C-8610D7C19A4A}.Release|x86.Build.0 = Release|Win32
+		{9B5B0A86-02D9-4A5C-91D1-F2FE41749199}.Debug|x64.ActiveCfg = Debug|x64
+		{9B5B0A86-02D9-4A5C-91D1-F2FE41749199}.Debug|x64.Build.0 = Debug|x64
+		{9B5B0A86-02D9-4A5C-91D1-F2FE41749199}.Debug|x86.ActiveCfg = Debug|Win32
+		{9B5B0A86-02D9-4A5C-91D1-F2FE41749199}.Debug|x86.Build.0 = Debug|Win32
+		{9B5B0A86-02D9-4A5C-91D1-F2FE41749199}.Release|x64.ActiveCfg = Release|x64
+		{9B5B0A86-02D9-4A5C-91D1-F2FE41749199}.Release|x64.Build.0 = Release|x64
+		{9B5B0A86-02D9-4A5C-91D1-F2FE41749199}.Release|x86.ActiveCfg = Release|Win32
+		{9B5B0A86-02D9-4A5C-91D1-F2FE41749199}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{648DB76D-CA05-4F28-B581-3672A9554205} = {04BC4C00-8F1D-445F-82CE-A47134AC7AC3}
+		{3D1F5785-297B-4305-9815-E2D24FF9B1E9} = {944EA353-6002-45C7-A834-7A4F43BBAEA3}
+		{E6EAF3C2-0060-4F3C-BC5F-6FB64CDD487B} = {944EA353-6002-45C7-A834-7A4F43BBAEA3}
+		{BFB83DFB-2C88-41F0-B52F-491405A42BEA} = {04BC4C00-8F1D-445F-82CE-A47134AC7AC3}
+		{CD1895EF-5498-41D2-ADE9-C4E9DEAAD2B0} = {04BC4C00-8F1D-445F-82CE-A47134AC7AC3}
+		{40198152-6D28-4DD1-AC45-E52D307FADB6} = {CD1895EF-5498-41D2-ADE9-C4E9DEAAD2B0}
+		{E09A252B-6600-494D-95C8-C696EC638C49} = {40198152-6D28-4DD1-AC45-E52D307FADB6}
+		{0A456F59-FFCF-4D08-9BB3-7F11FDC97D0B} = {04BC4C00-8F1D-445F-82CE-A47134AC7AC3}
+		{18C3B538-C9D0-4C21-8CCC-7EE2C7E0CE2B} = {04BC4C00-8F1D-445F-82CE-A47134AC7AC3}
+		{29F5F0FD-35D7-4D78-9492-0F5E7E1D1D4E} = {04BC4C00-8F1D-445F-82CE-A47134AC7AC3}
+		{3E58C1EA-D646-4ADC-8C18-4F45BB833785} = {04BC4C00-8F1D-445F-82CE-A47134AC7AC3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67CD21B5-2300-4DF4-9137-4224D8EEA711}
+	EndGlobalSection
+EndGlobal

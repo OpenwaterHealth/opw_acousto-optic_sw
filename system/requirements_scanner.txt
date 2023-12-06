@@ -1,0 +1,21 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+#
+
+cython
+ffmpeg
+# this version is needed to avoid a bug see:
+# https://github.com/matplotlib/jupyter-matplotlib/issues/127
+ipympl=0.2.1
+ipython
+ipywidgets
+itkwidgets
+matplotlib
+mayavi
+numpy
+pandas
+python=3.7.4
+#pywin32
+scikit-image
+scipy
+voila=0.1.8

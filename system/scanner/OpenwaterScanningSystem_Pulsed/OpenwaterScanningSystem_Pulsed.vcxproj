@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0B8D06B7-71D9-4EDC-AE3C-8610D7C19A4A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OpenwaterScanningSystemPulsed</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+    <Import Project="..\..\third_party\glog\win\glog\glog.vcxitems" Label="Shared" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..;$(SolutionDir)..\third_party\glog\win\include;$(SolutionDir)..\third_party\fftw\fftw-3.3.5-dll64;$(SolutionDir)..\third_party\SFML-2.5.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\third_party\ni\lib;$(SolutionDir)..\third_party\libx64;$(SolutionDir)..\third_party\Win64\Lib_x64\msc;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..;$(SolutionDir)..\third_party\glog\win\include;$(SolutionDir)..\third_party\fftw\fftw-3.3.5-dll64;$(SolutionDir)..\third_party\SFML-2.5.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\third_party\libx64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;HAVE_SNPRINTF;GOOGLE_GLOG_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>5040</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>NIDAQmx.lib;visa32.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>tiff.dll;visa32.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;HAVE_SNPRINTF;GOOGLE_GLOG_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>5040</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>tiff.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\component\inc\execnode.h" />
+    <ClInclude Include="..\..\component\inc\fftt.h" />
+    <ClInclude Include="..\..\component\inc\fftwutil.h" />
+    <ClInclude Include="..\..\component\inc\frame.h" />
+    <ClInclude Include="..\..\component\inc\fx3.h" />
+    <ClInclude Include="..\..\component\inc\intelhex.h" />
+    <ClInclude Include="..\..\component\inc\octopus.h" />
+    <ClInclude Include="..\..\component\inc\octo_fw.h" />
+    <ClInclude Include="..\..\component\inc\prettyPrintOctopusRegisters.h" />
+    <ClInclude Include="..\..\component\inc\rcam.h" />
+    <ClInclude Include="..\..\component\inc\roi.h" />
+    <ClInclude Include="..\..\component\inc\serial.h" />
+    <ClInclude Include="..\..\component\inc\stddev.h" />
+    <ClInclude Include="..\..\component\inc\time.h" />
+    <ClInclude Include="..\..\component\inc\ustx.h" />
+    <ClInclude Include="..\..\component\inc\zoomable.h" />
+    <ClInclude Include="..\..\third_party\json-develop\single_include\nlohmann\json.hpp" />
+    <ClInclude Include="..\..\third_party\practical-socket\PracticalSocket.h" />
+    <ClInclude Include="AmpStage.h" />
+    <ClInclude Include="AsyncScanner.h" />
+    <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="ConexStage.h" />
+    <ClInclude Include="delays.h" />
+    <ClInclude Include="FrameSave.h" />
+    <ClInclude Include="laser.h" />
+    <ClInclude Include="LaserMonitor.h" />
+    <ClInclude Include="OctopusManager.h" />
+    <ClInclude Include="QuantumComposers.h" />
+    <ClInclude Include="robot.h" />
+    <ClInclude Include="RobotScanner.h" />
+    <ClInclude Include="RotisserieScanner.h" />
+    <ClInclude Include="rs232_wrapper.h" />
+    <ClInclude Include="scanner.h" />
+    <ClInclude Include="stages.h" />
+    <ClInclude Include="trigger.h" />
+    <ClInclude Include="Verdi.h" />
+    <ClInclude Include="VoxelData.h" />
+    <ClInclude Include="VoxelSave.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\component\src\execnode.cpp" />
+    <ClCompile Include="..\..\component\src\fftt.cpp" />
+    <ClCompile Include="..\..\component\src\fftwutil.cpp" />
+    <ClCompile Include="..\..\component\src\frame.cpp" />
+    <ClCompile Include="..\..\component\src\fx3.cpp" />
+    <ClCompile Include="..\..\component\src\intelhex.cpp" />
+    <ClCompile Include="..\..\component\src\octopus.cpp" />
+    <ClCompile Include="..\..\component\src\prettyPrintOctopusRegisters.c" />
+    <ClCompile Include="..\..\component\src\rcam.cpp" />
+    <ClCompile Include="..\..\component\src\roi.cpp" />
+    <ClCompile Include="..\..\component\src\serial.cpp" />
+    <ClCompile Include="..\..\component\src\stddev.cpp" />
+    <ClCompile Include="..\..\component\src\ustx.cpp" />
+    <ClCompile Include="..\..\component\src\zoomable.cpp" />
+    <ClCompile Include="..\..\third_party\practical-socket\PracticalSocket.cpp" />
+    <ClCompile Include="..\..\third_party\rs232\rs232.c" />
+    <ClCompile Include="AmpStage.cpp" />
+    <ClCompile Include="AsyncScanner.cpp" />
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="ConexStage.cpp" />
+    <ClCompile Include="delays.cpp" />
+    <ClCompile Include="FrameSave.cpp" />
+    <ClCompile Include="OctopusManager.cpp" />
+    <ClCompile Include="OpenwaterScanningSystem_Pulsed.cpp" />
+    <ClCompile Include="QuantumComposers.cpp" />
+    <ClCompile Include="robot.cpp" />
+    <ClCompile Include="RobotScanner.cpp" />
+    <ClCompile Include="RotisserieScanner.cpp" />
+    <ClCompile Include="scanner.cpp" />
+    <ClCompile Include="Verdi.cpp" />
+    <ClCompile Include="VoxelSave.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BUILD" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

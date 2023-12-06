@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OpenWater Web App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the Material stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
+    
+    <!-- import the Material javascript file -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js" ></script>    
+  </head>
+  <body class="mdc-typography">
+      <h1>Hello Material World!</h1>
+      <p>
+          Scan Parameters
+      </p>
+      <div class="mdc-text-field adopt-form__input-field">
+          <input type="number" id="my-text-field" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="my-text-field">X Length [0-49mm]</label>
+          <div class="mdc-line-ripple"></div>
+      </div>
+      <div class="mdc-text-field adopt-form__input-field">
+          <input type="number" id="my-text-field" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="my-text-field">Y Length [0-27mm]</label>
+          <div class="mdc-line-ripple"></div>
+      </div>
+      <div class="mdc-text-field adopt-form__input-field">
+          <input type="number" id="my-text-field" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="my-text-field">Z Length [0-27mm]</label>
+          <div class="mdc-line-ripple"></div>
+      </div>
+      <div class="mdc-text-field adopt-form__input-field">
+          <input type="number" id="my-text-field" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="my-text-field">X Step Size [mm]</label>
+          <div class="mdc-line-ripple"></div>
+      </div>
+      <div class="mdc-text-field adopt-form__input-field">
+          <input type="number" id="my-text-field" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="my-text-field">Y Step Size [mm]</label>
+          <div class="mdc-line-ripple"></div>
+      </div>
+      <div class="mdc-text-field adopt-form__input-field">
+          <input type="number" id="my-text-field" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="my-text-field">Z Step Size [mm]</label>
+          <div class="mdc-line-ripple"></div>
+      </div>
+      <div class="mdc-text-field adopt-form__input-field">
+          <input type="number" id="my-text-field" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="my-text-field">Z Start Position [mm]</label>
+          <div class="mdc-line-ripple"></div>
+      </div>
+      <div class="mdc-text-field adopt-form__input-field">
+          <input type="number" id="my-text-field" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="my-text-field">Additional Pause Time [s]</label>
+          <div class="mdc-line-ripple"></div>
+      </div>
+      <p>
+          <button class="foo-button mdc-button">Scan</button>
+      </p>
+
+      <!-- include the Glitch button to show what the webpage is about and
+    to make it easier for folks to view source and remix -->
+      <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+      <script src="https://button.glitch.me/button.js"></script>
+
+      <!-- instantiate your component -->
+      <script>
+          mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+      </script>
+
+  </body>
+</html>
