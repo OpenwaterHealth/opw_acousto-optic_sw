@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aadetect", "aadetect.vcproj", "{ACBBBBDF-AAAC-47F5-A1B3-3EF1D498186F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aagpio", "aagpio.vcproj", "{43B8D1E4-9A12-4BA9-98DB-9722FC1BD093}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aai2c_eeprom", "aai2c_eeprom.vcproj", "{8BEA0ED0-0E29-4BDA-B8B1-98AD211B72C0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aai2c_file", "aai2c_file.vcproj", "{15BAB1EF-500C-44FA-9BA7-F9CEDCD11710}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aai2c_slave", "aai2c_slave.vcproj", "{C01A5C22-16AA-4052-9286-241D56EBCD45}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aalights", "aalights.vcproj", "{076B8C63-13EA-40A6-A738-4E1885D20D46}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aamonitor", "aamonitor.vcproj", "{590FF892-8FA8-4586-9C18-CAA23D9DFB32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aaspi_eeprom", "aaspi_eeprom.vcproj", "{F0C42B57-2884-4C4E-830D-02BDB8F19D02}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aaspi_file", "aaspi_file.vcproj", "{C9B45870-4328-4A4F-ABCE-95351F5DC92C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aaspi_slave", "aaspi_slave.vcproj", "{0A8203FC-52AD-4564-80CF-822092B39237}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACBBBBDF-AAAC-47F5-A1B3-3EF1D498186F}.Release|x64.ActiveCfg = Release|x64
+		{ACBBBBDF-AAAC-47F5-A1B3-3EF1D498186F}.Release|x64.Build.0 = Release|x64
+		{43B8D1E4-9A12-4BA9-98DB-9722FC1BD093}.Release|x64.ActiveCfg = Release|x64
+		{43B8D1E4-9A12-4BA9-98DB-9722FC1BD093}.Release|x64.Build.0 = Release|x64
+		{8BEA0ED0-0E29-4BDA-B8B1-98AD211B72C0}.Release|x64.ActiveCfg = Release|x64
+		{8BEA0ED0-0E29-4BDA-B8B1-98AD211B72C0}.Release|x64.Build.0 = Release|x64
+		{15BAB1EF-500C-44FA-9BA7-F9CEDCD11710}.Release|x64.ActiveCfg = Release|x64
+		{15BAB1EF-500C-44FA-9BA7-F9CEDCD11710}.Release|x64.Build.0 = Release|x64
+		{C01A5C22-16AA-4052-9286-241D56EBCD45}.Release|x64.ActiveCfg = Release|x64
+		{C01A5C22-16AA-4052-9286-241D56EBCD45}.Release|x64.Build.0 = Release|x64
+		{076B8C63-13EA-40A6-A738-4E1885D20D46}.Release|x64.ActiveCfg = Release|x64
+		{076B8C63-13EA-40A6-A738-4E1885D20D46}.Release|x64.Build.0 = Release|x64
+		{590FF892-8FA8-4586-9C18-CAA23D9DFB32}.Release|x64.ActiveCfg = Release|x64
+		{590FF892-8FA8-4586-9C18-CAA23D9DFB32}.Release|x64.Build.0 = Release|x64
+		{F0C42B57-2884-4C4E-830D-02BDB8F19D02}.Release|x64.ActiveCfg = Release|x64
+		{F0C42B57-2884-4C4E-830D-02BDB8F19D02}.Release|x64.Build.0 = Release|x64
+		{C9B45870-4328-4A4F-ABCE-95351F5DC92C}.Release|x64.ActiveCfg = Release|x64
+		{C9B45870-4328-4A4F-ABCE-95351F5DC92C}.Release|x64.Build.0 = Release|x64
+		{0A8203FC-52AD-4564-80CF-822092B39237}.Release|x64.ActiveCfg = Release|x64
+		{0A8203FC-52AD-4564-80CF-822092B39237}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

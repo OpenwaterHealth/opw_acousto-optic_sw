@@ -1,0 +1,137 @@
+                      Aardvark I2C/SPI Software
+                      -------------------------
+
+Changes for v5.15 (2014/02/28)
+------------------------------
+- Improved USB driver support for Linux
+
+
+Changes for v5.14 (2013/08/30)
+------------------------------
+- Added support Aardvark OEM
+
+
+Changes for v5.13 (2011/03/15)
+------------------------------
+- Added support for Python 2.7
+
+
+Changes for v5.12 (2010/06/25)
+------------------------------
+- Released separate 32-bit and 64-bit libraries
+- Improved threading performance for Python
+
+
+Changes for v5.11 (2009/09/15)
+------------------------------
+- Minor fix to aa_i2c_write_read to make it consistent with Aardvark FW
+
+
+Changes for v5.10 (2009/08/07)
+------------------------------
+- Added constants for using stdout and stderr with aa_log
+- .NET 2.0 now required; CLS compliance no longer supported (see README.txt)
+- Added aa_i2c_write_read function for lower latency write+read operations
+- Added support for Python 2.6
+
+
+Changes for v5.03 (2009/02/16)
+------------------------------
+- Fixed regression that caused .NET bindings to no longer work
+
+
+Changes for v5.02 (2009/01/30)
+------------------------------
+- Split supported platforms into separate API packages
+- Included language examples in API packages instead of in a separate package
+
+
+Changes for v5.01 (2008/07/18)
+------------------------------
+- Fixed interoperability issue with FW >= v3.40 when doing 10-bit I2C reads
+
+
+Changes for v5.00 (2008/06/06)
+------------------------------
+- Added support on 64-bit Windows for 32-bit applications
+- Added support for Mac OS X
+- Improvements to Rosetta support (see README.txt and UPGRADE.txt)
+- Slight changes to some API function parameters (see UPGRADE.txt)
+- Implemented sized read functionality for aa_i2c_read function
+- Added support for configurable I2C bus timeout
+- Increased timeout range for aa_gpio_change to 60 seconds of timeout
+- Passing 0 to aa_close will close all open handles
+- Unloading library from process will automatically close all Aardvark handles
+- Improved aa_close execution time under Linux
+- Fixed rare aa_open failures under Linux
+
+
+Changes for v4.00 (2007/04/20)
+------------------------------
+- Changed names of type definitions in the API
+- Library under Linux is now dynamically linked to libusb
+- Added support for Python 2.5 and removed support for Python 2.2
+- Added support for C#, Visual Basic .NET
+
+
+Changes for v3.30 (2006/08/15)
+------------------------------
+- Added support for Python 2.4
+- Added aa_gpio_change functionality
+- Improved device communication under Linux when PC is under high system load
+
+
+Changes for v3.20 (2005/07/01)
+------------------------------
+- Faster device detection on Windows
+- Serial numbers can be read from in-use devices
+- Added Visual Basic aa_status_string()
+
+
+Changes for v3.12 (2005/02/02)
+------------------------------
+- Fixed a Visual Basic inconsistency
+
+
+Changes for v3.11 (2004/12/20)
+------------------------------
+- Fixed a serial number inconsistency on some devices
+- Added a new adapter information utility
+
+
+Changes for v3.10 (2004/11/20)
+------------------------------
+- Added I2C status code constants to Rosetta bindings
+- Added Python 2.3 support to Rosetta bindings
+- Added support for Linux kernel 2.6.5
+- Increased I2C bus monitor speed to 125 kHz
+- Support for unique identifiers
+
+
+Changes for v3.00 (2004/08/20)
+------------------------------
+- Direct USB driver
+- Non-intrusive I2C bus monitor
+- Rosetta language bindings
+- Minor changes in some API arguments
+- Minor naming changes for some data types
+- Polling API for asynchronous messages
+- Extended I2C read/write functions
+- Support for bitrates down to 1 kHz
+- Improved I2C and SPI slave functions
+- Improved error reporting
+
+
+Changes for v2.50 (2004/04/30)
+------------------------------
+- Added support for v2.01 hardware
+- Configurable target power
+- Configurable I2C pullup resistors
+
+
+Changes for v2.00 (2003/12/01)
+------------------------------
+- General Purpose IO
+- 10-bit addressing
+- Combined format
+- Repeated start

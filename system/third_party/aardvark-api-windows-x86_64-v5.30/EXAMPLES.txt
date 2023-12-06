@@ -1,0 +1,135 @@
+                  Total Phase Aardvark Sample Code
+                  --------------------------------
+
+Contents
+--------
+c/       - Examples using C/C++ API
+python/  - Python script examples
+csharp/  - C# examples
+vb.net/  - Visual Basic .NET examples (Windows only)
+vb6/     - Visual Basic 6 examples (32-bit Windows only)
+
+
+Instructions
+------------
+Each individual examples directory has a README.txt which generally
+describes how to run the examples given.  Please see those files for
+more details.
+
+Every example is relatively short and well-commented.  The
+application developer is referred to the source code of the examples
+for detailed information on how each example operates.
+
+If the device communicates with a 3rd party device, the target power
+pins are enabled in each example.  This feature is only effective on
+v2.0 hardware or greater.  The power pins on the v1.02 hardware are
+not enabled by default.
+
+The C, Python, and C# examples include all of the following modules,
+while only a subset of these modules are demonstrated in the other
+language directories.
+
+
+API Features
+------------
+For a detailed explanation of the API features and constructs, please
+refer to the Aardvark datasheet.  For a quick overview on the
+differences in API syntax between languages, refer to the README.txt
+found in the Aardvark Software API package containing the Rosetta
+Language Bindings.  The Aardvark datasheet and Software API package
+are available on the Total Phase website.
+
+
+Short Description
+-----------------
+* aadetect        - Detect Aardvark devices attached to the system.
+
+* aalights        - Flash LEDs attached to a Philips PCA9554D I/O
+                    port expander as found on the Activity Board.
+
+* aai2c_eeprom    - Read from or write to an I2C serial EEPROM, such
+                    as the Atmel AT24C02 on the Activity Board.
+
+* aaspi_eeprom    - Read from or write to an SPI serial EEPROM, such
+                    such as the Atmel AT25080A found on the Activity
+                    Board.
+
+* aai2c_file      - Demonstrate the I2C slave functionality of
+  aai2c_slave       the Aardvark device.  This example requires two
+                    Aardvark devices.  First run aai2c_slave with
+                    the first Aardvark device to wait for a new slave
+                    transmission.  Then, in another shell, run
+                    aai2c_file to transmit a binary file with the
+                    second Aardvark device.
+
+* aaspi_file      - Demonstrate the SPI slave functionality of
+  aaspi_slave       the Aardvark device.  This example requires two
+                    Aardvark devices.  First run aaspi_slave with
+                    the first Aardvark device to wait for a new slave
+                    transmission.  Then, in another shell, run
+                    aaspi_file to transmit a binary file with the
+                    second Aardvark device.
+
+* aagpio          - Perform some simple GPIO tests with a single
+                    Aardvark adapter.  The results can be verified
+                    using an oscilloscope or multimeter.
+
+* aamonitor       - Demonstrate the I2C Bus Monitor feature. This
+                    example can be run on one Aardvark while using a
+                    second Aardvark to communicate with the I2C
+                    EEPROM on the Activity Board (see aai2c_eeprom).
+                    The first Aardvark will monitor the traffic
+                    between the second Aardvark and the EEPROM.
+
+
+Example
+-------
+
+*** aai2c_eeprom ***
+
+Refer to specific language directory README.txt to see how to run
+this example under the desired programming language.
+
+
+> aadetect
+1 device(s) found:
+    port=0   (avail) (2222-333333)
+
+
+> aai2c_eeprom 0 400 zero 0x50 0 32
+Bitrate set to 400 kHz
+Zeroed EEPROM
+
+
+> aai2c_eeprom 0 400 read 0x50 0 32
+Bitrate set to 400 kHz
+
+Data read from device:
+0000:  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+0010:  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+
+
+> aai2c_eeprom 0 400 write 0x50 0 32
+Bitrate set to 400 kHz
+Wrote to EEPROM
+
+
+> aai2c_eeprom 0 400 read 0x50 0 32
+Bitrate set to 400 kHz
+
+Data read from device:
+0000:  01 02 03 04 05 06 07 08  09 0a 0b 0c 0d 0e 0f 10
+0010:  11 12 13 14 15 16 17 18  19 1a 1b 1c 1d 1e 1f 00
+
+
+> aai2c_eeprom 0 400 zero 0x50 8 4
+Bitrate set to 400 kHz
+Zeroed EEPROM
+
+
+> aai2c_eeprom 0 400 read 0x50 0 32
+Bitrate set to 400 kHz
+
+Data read from device:
+0000:  01 02 03 04 05 06 07 08  00 00 00 00 0d 0e 0f 10
+0010:  11 12 13 14 15 16 17 18  19 1a 1b 1c 1d 1e 1f 00
