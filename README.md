@@ -16,7 +16,7 @@ jupyter notebook
 Instructions:
 - Open [ao_viewer.py](analysis/ao_viewer.py) script within [Spyder](https://www.spyder-ide.org/), preferably installed as a part of [Anaconda](https://www.anaconda.com/download).
 - Clone the example data repository ([opw_acousto-optic_data](https://github.com/OpenwaterInternet/opw_acousto-optic_data/)).
-- Update directories within the ao_viewer.py and run the file.
+- Update ```dataPath``` variable for data directory location within the ao_viewer.py and run the file.
 
 ## Additional acousto-optic repositories here:
 - [Link to the hardware repository](https://github.com/OpenwaterInternet/opw_acousto-optic_hw/)
