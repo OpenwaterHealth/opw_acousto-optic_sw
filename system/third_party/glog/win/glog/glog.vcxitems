@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{51ca10ff-73b5-455f-bf10-7fcb3a1d4403}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\src\config.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\src\demangle.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\src\port.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\src\stacktrace.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\src\stacktrace_windows-inl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\src\symbolize.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\src\utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\demangle.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\flagsv.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\logging.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\port.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\raw_logging.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\signalhandler.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\symbolize.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\src\utilities.cc" />
+  </ItemGroup>
+</Project>
